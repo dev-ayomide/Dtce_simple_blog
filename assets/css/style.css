@@ -1,0 +1,387 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #46166C;
+  color: #fff;
+  line-height: 1.6;
+  padding: 20px;
+  font-size: 16px;
+}
+
+a{
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Header Section */
+.header {
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+/* Blog List Page */
+.blog-list-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin: 0 auto;
+}
+
+.blog-card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card-content {
+  padding: 0;
+}
+
+.card-content h2 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #bbb;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.excerpt {
+  font-size: 0.95rem;
+  color: #ddd;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.read-more {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #fff;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: #ffb84d;
+}
+
+/* Single Post Page */
+.post-container {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 12px;
+  padding: 40px;
+  margin-top: 20px;
+}
+
+.post-title {
+  font-size: 2.2rem;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.post-date {
+  color: #bbb;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Social Icons (from the design) */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.post-content {
+  margin: 30px 0;
+}
+
+.post-content p {
+  margin: 20px 0;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #f0f0f0;
+}
+
+.post-content strong {
+  color: #fff;
+}
+
+/* Comments Section */
+.comments-section {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.comments-section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.comment {
+  display: flex;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: transparent;
+  border-left: none;
+  border-radius: 0;
+  margin-bottom: 20px;
+}
+
+.comment-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.comment-author {
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+}
+
+.comment-text {
+  color: #ddd;
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+}
+
+.comment-date {
+  font-size: 0.85rem;
+  color: #bbb;
+}
+
+/* Add Comment Form */
+.add-comment {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.add-comment textarea {
+  flex: 1;
+  padding: 15px auto;
+  border: none;
+  border-radius: 8px;
+  background: none;
+  color: #fff;
+  font-family: inherit;
+  font-size: 0.95rem;
+  resize: none;
+  min-height: 10px;
+  outline: none;
+}
+
+.add-comment textarea::placeholder {
+  color: #bbb;
+}
+
+.add-comment button {
+  background: #fff;
+  font-family: inherit;
+  color: #2a004e;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.add-comment button:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+/* Related Posts Section */
+.related-posts {
+  margin-top: 30px;
+}
+
+.related-posts h3 {
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.related-card {
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.related-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.related-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.related-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.related-card .date {
+  font-size: 0.85rem;
+  color: #bbb;
+  margin-bottom: 10px;
+}
+
+.related-card p {
+  font-size: 0.9rem;
+  color: #ddd;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Mobile Phones (up to 768px) */
+@media screen and (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  /* Blog Grid - Single Column on Mobile */
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .blog-card {
+    padding: 15px;
+  }
+  
+  .blog-card img {
+    height: 180px;
+  }
+  
+  .card-content h2 {
+    font-size: 1.1rem;
+  }
+  
+  /* Single Post */
+  .post-container {
+    padding: 25px;
+    margin-top: 15px;
+  }
+  
+  .post-title {
+    font-size: 1.8rem;
+  }
+
+  .post-date {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  /* Related Posts - Single Column */
+  .related-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
